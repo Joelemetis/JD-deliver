@@ -1,0 +1,150 @@
+<html>
+<head>
+    <title>JD Deliver 🚛</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <span class="text-4xl">👨‍💻</span>
+                <h1 class="text-2xl font-bold ml-3">JD Deliver 🚛</h1>
+            </div>
+            <div class="text-sm">
+                <p>Contact : +(228) 90230442 / 79800523</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Presentation Section -->
+    <section class="py-10 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-blue-600 mb-5">Présentation</h2>
+            <p class="text-lg leading-relaxed max-w-4xl mx-auto">
+                JD Deliver est une entreprise de livraison basée à Lomé, spécialisée dans le transport rapide et sécurisé de colis divers. Que ce soit pour des documents, des courses, des petits colis ou des produits de commerce en ligne, nous offrons des solutions adaptées à vos besoins. Notre service est conçu pour répondre efficacement à vos attentes grâce à une équipe réactive et un système de livraison optimisé.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-10 bg-gray-50">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-blue-600 text-center mb-10">Nos Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 shadow-md rounded-lg">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-3">Type de colis</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Documents administratifs ou professionnels</li>
+                        <li>Courses rapides (pharmacies, supermarchés, etc.)</li>
+                        <li>Petits colis personnels ou commerciaux</li>
+                        <li>Produits issus de plateformes de commerce en ligne</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 shadow-md rounded-lg">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-3">Options de livraison</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Livraison express : Livraison en quelques heures pour des besoins urgents.</li>
+                        <li>Livraison standard : Livraison dans un délai maximum de 24 heures.</li>
+                        <li>Livraison régulière : Option pour des livraisons hebdomadaires ou programmées.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 shadow-md rounded-lg">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-3">Zone de couverture</h3>
+                    <p>Toute la ville de Lomé et ses environs immédiats.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-10 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-blue-600 mb-5">Tarifs (par kilomètre)</h2>
+            <div class="max-w-3xl mx-auto text-left">
+                <ul class="list-disc pl-5 space-y-2 text-lg">
+                    <li>0 à 5 km : 1000 à 1500 FCFA</li>
+                    <li>5 à 10 km : 1500 à 2500 FCFA</li>
+                    <li>10 à 15 km : 2500 à 3500 FCFA</li>
+                    <li>Plus de 15 km : 3500 FCFA et plus (selon la distance exacte et le type de service choisi).</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section class="py-10 bg-gray-50">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-blue-600 mb-5">Moyens de paiement</h2>
+            <ul class="list-disc pl-5 max-w-2xl mx-auto space-y-2 text-lg text-left">
+                <li>Paiement en espèces à la livraison.</li>
+                <li>Paiement mobile via Mixx ou Flooz.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section class="py-10 bg-gray-50">
+        <div class="container mx-auto max-w-2xl">
+            <h2 class="text-3xl font-bold text-blue-600 mb-5 text-center">Formulaire de Commande</h2>
+            <form id="orderForm" class="bg-white p-8 shadow-md rounded-lg">
+                <!-- Full Name -->
+                <div class="mb-4">
+                    <label for="fullName" class="block text-gray-700 font-semibold">Nom complet :</label>
+                    <input type="text" id="fullName" class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                </div>
+                <!-- Package Type -->
+                <div class="mb-4">
+                    <label for="packageType" class="block text-gray-700 font-semibold">Type de colis :</label>
+                    <input type="text" id="packageType" class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                </div>
+                <!-- Pickup Address -->
+                <div class="mb-4">
+                    <label for="pickup" class="block text-gray-700 font-semibold">Adresse de récupération & numéro de téléphone :</label>
+                    <textarea id="pickup" rows="3" class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-600" required></textarea>
+                </div>
+                <!-- Delivery Address -->
+                <div class="mb-4">
+                    <label for="delivery" class="block text-gray-700 font-semibold">Adresse de livraison & numéro de téléphone :</label>
+                    <textarea id="delivery" rows="3" class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-600" required></textarea>
+                </div>
+                <!-- Confirmation -->
+                <div class="mb-4">
+                    <label for="confirmation" class="block text-gray-700 font-semibold">Confirmation :</label>
+                    <input type="checkbox" id="confirmation" class="mr-2" required> J'accepte les termes et conditions.
+                </div>
+                <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">
+                    Envoyer la commande
+                </button>
+            </form>
+            <div id="formResponse" class="mt-5 text-center text-green-600 font-bold hidden">Votre commande a été envoyée avec succès !</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p class="text-sm">&copy; 2025 JD Deliver 🚛. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Notification Script -->
+    <script>
+        document.getElementById('orderForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Empêche le rechargement de la page
+            const formResponse = document.getElementById('formResponse');
+            formResponse.classList.remove('hidden'); // Affiche le message de confirmation
+            setTimeout(() => {
+                alert('Nouvelle commande reçue ! Vérifiez vos messages ou emails.');
+            }, 500);
+        });
+    </script>
+</body>
+</html>
